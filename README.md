@@ -1,7 +1,3 @@
-Absolutely! Below is a clean and professional `README.md` for your **AlifDev** repository. It includes a description, features, tech stack, setup instructions, and more — tailored for your Next.js + Tailwind CSS + Gulp setup.
-
----
-
 ## 🧠 AlifDev
 
 **AlifDev** is a modern and efficient front-end project built with [Next.js](https://nextjs.org/), styled using [Tailwind CSS](https://tailwindcss.com/), and enhanced with [Gulp](https://gulpjs.com/) for task automation. It’s designed as a scalable and adaptable foundation for web development projects, with performance and maintainability in mind.
