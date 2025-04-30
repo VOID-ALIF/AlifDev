@@ -62,13 +62,16 @@ Visit [http://localhost:3000](http://localhost:3000) or [http://localhost:8080](
 
 ```
 AlifDev/
-├── app/                # Main Next.js app folder
-├── public/             # Static assets
-├── styles/             # Custom styles (Tailwind/Sass)
+├── dev/                # project.html file
+├── node_modules/       # set up your own
+├── out/                # Css, images, js, index.html files
+├── src/
+    ├── scss/
+    ├── ts/ 
 ├── gulpfile.js         # Gulp task runner configuration
-├── tailwind.config.js  # Tailwind CSS config
-├── next.config.js      # Next.js configuration
-└── package.json        # Project metadata & scripts
+├── package-lock.json
+├── package.json
+├── tsconfig.js
 ```
 
 ---
