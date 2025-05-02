@@ -1,18 +1,98 @@
-# Portfolio Website
-This repository features the source code for my personal portfolio website. 
-## About
-This website is built using **TypeScript** and **SCSS**, transpiled quickly using **Gulp** build tools. I opted away from any frameworks to experience what creating an interactive web page from scratch feels like.
-## Process
-Originally, I was writing my source code in ES6 JavaScript using the Babel transpiler. However, I began to realize I was unable to achieve the quality, control, and organization over my code I was aiming for. I quickly converted everything over to TypeScript; it was now easier to communicate internal states and HTML elements across multiple files.
+## 🧠 AlifDev
 
-I designed my SVG logo using **Figma**.
+**AlifDev** is a modern and efficient front-end project built with [Next.js](https://nextjs.org/), styled using [Tailwind CSS](https://tailwindcss.com/), and enhanced with [Gulp](https://gulpjs.com/) for task automation. It’s designed as a scalable and adaptable foundation for web development projects, with performance and maintainability in mind.
 
-The particle effects are heavily based on [VincentGarreau's particles.js framework](https://github.com/VincentGarreau/particles.js). My goal was to re-imagine his framework using classes and internal states. Type annotations via TypeScript also help a lot in creating the configuration settings.
+---
 
-Nearly all of the page's content is organized using **CSS Flexbox**. I created an [extensive library](https://github.com/jackson-nestelroad/portfolio-website/blob/master/src/scss/General/Flex.scss) for working with flexbox grids and flex items in multiple viewports.
+### 🚀 Features
 
-The hamburger menu button and the actual pullout menu are detached, so I created a simple [Event Dispatcher](https://github.com/jackson-nestelroad/portfolio-website/blob/master/src/ts/Modules/EventDispatcher.ts) class to communicate custom events to elements on the page. For example, the `<main>` tag subscribes to the `MenuButton` dispatcher, so when the `MenuButton` dispatches the `toggle` event, the `<main>` tag knows whether to open or close the menu. These events are not dispatches when the Web API, so they cannot be intercepted.
+- ⚡️ Built with **Next.js** — for fast, scalable, server-rendered applications
+- 🎨 Styled using **Tailwind CSS** — utility-first, customizable styling
+- ⚙️ **Gulp integration** — task automation for Sass, TypeScript, and more
+- 🧩 Modular file structure and scalable architecture
+- 🛠 Dev server with LiveReload support via Gulp
+- 📁 Support for static assets in the `public` folder
 
-With the skills, experience, projects, and education sections, I needed an easy way to create reusable bits of HTML for recurring content. I decided to begin using **JSX** syntax since it is natively supported in TypeScript using a custom JSX Factory function. Opposed to creating a React Node, my JSX compiles directly to an `HTMLElement` to be placed onto the page.
+---
 
-Originally, these JSX-oriented classes would transform a set of data into HTML, but I later created a tiny [Component class](https://github.com/jackson-nestelroad/portfolio-website/blob/master/src/ts/Classes/Component/index.ts) to strengthen my solution and make it more interface-oriented. These components now create their element in the constructor, have references to rendered elements, and have the ability to update the HTML displayed on the page. I plan to study more about creating JavaScript Web Components (similar to how React works) in the future as a side project.
+### 🛠 Tech Stack
+
+- **Framework**: Next.js
+- **Styling**: Tailwind CSS, PostCSS
+- **Automation**: Gulp
+- **Languages**: JavaScript, TypeScript (optional with Gulp), HTML, CSS/Sass
+- **Bundler**: Browserify (via Gulp)
+
+---
+
+### 📦 Getting Started
+
+#### 1. **Clone the repository**
+```bash
+git clone https://github.com/VOID-ALIF/AlifDev.git
+cd AlifDev
+```
+
+#### 2. **Install dependencies**
+```bash
+npm install
+```
+
+#### 3. **Run the development server (Next.js)**
+```bash
+npm run dev
+# or
+gulp dev
+```
+
+Visit [http://localhost:3000](http://localhost:3000) or [http://localhost:8080](http://localhost:8080) depending on the method used.
+
+---
+
+### 📂 Gulp Tasks
+
+| Task        | Description                              |
+|-------------|------------------------------------------|
+| `gulp dev`  | Runs `npm run dev` (Next.js dev server)  |
+| `gulp`      | Starts a custom Gulp dev server with LiveReload, Sass, TypeScript, etc. |
+
+---
+
+### 🧪 Folder Structure
+
+```
+AlifDev/
+├── dev/                # project.html file
+├── node_modules/       # set up your own
+├── out/                # Css, images, js, index.html files
+├── src/
+    ├── scss/
+    ├── ts/ 
+├── gulpfile.js         # Gulp task runner configuration
+├── package-lock.json
+├── package.json
+├── tsconfig.js
+```
+
+---
+
+### 🌍 Live Demo
+
+Check out the deployed version:  
+🔗 [https://alif-dev.vercel.app](https://alif-dev.vercel.app)
+
+---
+
+### 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
+
+---
+
+### 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+Let me know if you'd like me to generate a badge section (build status, license, tech used) or add contribution guidelines!
